@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+
+    <title>Ma Ville</title>
+</head>
+<body>
+    <div id="navbar" class="navbar">
+        <div><h2><a href="#plan">Plan</a></h2></div>
+        <div><h2><a href="#bars">Bars</a></h2></div>
+        <div><h2><a href="#restaurants">Restaurants</a></h2></div>
+        <div class="first-go-up">
+            <a href="#maVille"><img style="width:40px; height:40px;" src="../images/go-up.png" alt=""></a>
+        </div>
+    </div>
+
+    <div id="maVille" class="ma-ville">
+        
+        <div class="ma-ville-titre-container">
+            <div class="ma-ville-titre">
+                <h2>Ma ville, mes découvertes:</h2>
+                <h1 style="margin-top: 50px;">LE QUARTIER EUROPÉEN</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="plan" class="plan">
+        <div class="plan-txt">
+                <h2 style="margin-top:100px;">PLAN</h2>
+                <p>Connu sous le nom de quartier européen<br>le Quartier Léopold haut de gamme abrite<br> lommission européenne et le Parlement européen,<br> ainsi que des bars et des restaurants branchés<br> installés autour de la place du<br> Luxembourg.<p>
+
+
+ 
+
+                <p style="margin-top:80px">Les jardins paysagers et les fontaines du parc du<br> Cinquantenaire entourent le musée automobile<br> Autoworld et le musée archéologique du <br>Cinquantenaire. </p>
+                    
+                    
+                    
+                    
+                <p style="margin-top:80px">Près du parc Léopold, le musée des Sciences <br>naturelles renferme des os de dinosaures et<br> propose des expositions interactives.</p>
+                    
+                  
+        </div>
+        <div style="position:relative" class="plan-carte">
+            <div id='map' style='width: 800px; height: 500px;margin-top: 100px; position: relative;'></div>
+        </div> 
+    </div> 
+
+    <div id="bars" class="bars">
+        <div class="bars-title-first">
+            <h1 style="margin-top:100px;">BARS</h1>
+        </div>
+            <div class="le-vester-bar">
+                <div class="bars-title-container">
+                    <div class="bars-title">
+                        <h1><a target="_blank"  class="le-vester-bar-title" href="https://vester-bar.be/">LE VESTER BAR</a></h1>
+                        <div class="marker-icon"><img style="width:20px; height:20px;" src="../images/locations.png" alt=""><h2 style="margin-left:10px ;font-size: 1.25rem;">RUE DES TREVES 44,1050 BRUSSEL</h2></div>
+                        <div class="restaurant-icon">
+                            <img style="width:20px; height:20px;" src="../images/fork.png" alt=""><h2 style="margin-left:10px ;">du lundi au vendredi de 9h a 15h</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:100px;" class="the-beer-factory">
+                <div class="bars-title-container">
+                    <div class="bars-title">
+                        <h1><a target="_blank"  class="the-beer-factory-title" href="http://www.brasserie-beer-factory.be/">THE BEER<br> FACTORY</a></h1>
+                        <div class="marker-icon"><img style="width:20px; height:20px;" src="../images/locations.png" alt=""><h2 style="margin-left:10px ;font-size: 1.15rem;">PL. DU LUXEMBOURG 6, 1050 IXELLES</h2></div>
+                        <div class="restaurant-icon">
+                            <img style="width:20px; height:20px;" src="../images/fork.png" alt=""><h2 style="margin-left:10px ;">du lundi au samedi de 11h a 00h</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:100px;" class="piada-bar">
+                <div class="bars-title-container">
+                    <div class="bars-title">
+                        <h1><a target="_blank" class="piada-bar-title" href="https://www.piadabar.eu">PIADA BAR</a></h1>
+                        <div class="marker-icon"><img style="width:20px; height:20px;" src="../images/locations.png" alt=""><h2 style="margin-left:10px ;font-size: 1.15rem;">RUE DES TREVÉS 44, 1050 BRUSSEL</h2></div>
+                        <div class="restaurant-icon">
+                            <img style="width:20px; height:20px;" src="../images/fork.png" alt=""><h2 style="margin-left:10px ; font-size: 1.25rem;">du lundi au samedi de 9h00 a 15h00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    
+    
+    <div id="restaurants" class="restaurants">
+        <div class="restaurants-title-first">
+            <h1 style="font-size: 5rem;margin-left:40px ;margin-top:100px ;">RESTAURANTS</h1>
+        </div>
+        <div class="taste-of-italy">
+            <div class="taste-of-italy-title-container">
+                <h1><a target="_blank" class="taste-of-italy-title" href="https://www.facebook.com/TasteOfItali/">TASTE OF<br> ITALY</a></h1>
+                <div class="marker-icon"><img style="width:20px; height:20px;" src="../images/locations.png" alt=""><h2 style="margin-left:10px ;font-size: 1.15rem;">RUE ARCHIMÉDE 17, 1000 BRUXELLES</h2></div>
+                <div class="restaurant-icon">
+                    <img style="width:20px; height:20px;" src="../images/fork.png" alt=""><h2 style="margin-left:10px ; font-size: 1.35rem;">du lundi au vendredi de 7h00 a 17h00</h2>
+                </div>
+            </div>
+        </div>
+        <div class="kafenio">
+            <div class="taste-of-italy-title-container">
+                <h1><a target="_blank" class="taste-of-italy-title" href="https://www.facebook.com/TasteOfItali/">KAFENIO</a></h1>
+                <div class="marker-icon"><img style="width:20px; height:20px;" src="../images/locations.png" alt=""><h2 style="margin-left:10px ;font-size: 1.25rem;">RUE STEVIN 134, 1000 BRUXELLES</h2></div>
+                <div class="restaurant-icon">
+                    <img style="width:20px; height:20px;" src="../images/fork.png" alt=""><h2 style="margin-left:10px ; font-size: 1.35rem;">du lundi au samedi de 12h00 a 22h30</h2>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+    
+        
+
+        
+        <div class="shapla-masala">
+            <div class="taste-of-italy-title-container">
+                <h1><a target="_blank" class="taste-of-italy-title" href="https://www.facebook.com/TasteOfItali/">SHAPLA<br> MASALA</a></h1>
+                <div class="marker-icon"><img style="width:20px; height:20px;" src="../images/locations.png" alt=""><h2 style="margin-left:10px ;font-size: 1.25rem;">RUE STEVIN 160, 1000 BRUXELLES</h2></div>
+                <div class="restaurant-icon">
+                    <img style="width:20px; height:20px;" src="../images/fork.png" alt=""><h2 style="margin-left:10px ; font-size: 1.35rem;">du lundi au samedi de 11h30 a 22h00</h2>
+                </div>
+            </div>
+            </div>
+            <div class="go-up">
+                <a href="#maVille"><img style="width:80px; height:80px;" src="../images/go-up.png" alt=""></a>
+            </div>
+            <div class="footer">
+                <div class="copyright">
+                    <p style="color:white ;margin-right:10px;font-size:14px;margin-top: 18px;font-weight: bold;">Designed by Tanguy Menten, Developed by Isa Iraz</p>
+                </div>
+                <div class="cookie">
+                    <ul style="margin-top: 15px;">
+                        <li>Actualité |</li>
+                        <li style="margin-left:10px ;">Statistiques |</li>
+                        <li style="margin-left:10px ;">Cookies</li>
+                    </ul>
+                </div>
+                <div class="realiser-par">
+                    <h2 style="color: white;font-size:1.2rem;margin-left: 10px;">Copyright©2022-Quartier européen</h2>
+                </div>
+            </div>
+            
+    
+        
+    
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaXNhaXIzMSIsImEiOiJja3pyMnIwdzQwZzBjMm9tdXE4b3ZpNTVpIn0.Zv6GtLpKrEIFNu5xYo8vVA';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [4.37236381351978,50.84322903259472 ],
+          zoom: 13.5,
+          attributionControl: false
+        });
+        
+
+      
+
+const marker = new mapboxgl.Marker()
+  .setLngLat([4.37236381351978,50.84322903259472])
+  .addTo(map);
+    
+      </script>
+      
+</body>
+</html>
